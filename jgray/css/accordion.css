@@ -1,0 +1,129 @@
+/**********  ACCORDION **********/
+
+
+.accordion{
+  border: 2px solid rgb(211,203,194);
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  float:right;
+  width:250px;
+  font-family: 'Roboto', sans-serif;
+    font-size:11pt;
+    font-weight:100;}
+
+.accordion li {
+  padding: 0;
+  list-style-type: none;
+  }
+
+
+
+.accordion-control {
+  text-align:left;
+  background-color: rgb(70,69,65);
+  display: block;
+  width: 100%;
+  padding: 0.5em 0.5em 0.5em 1.5em;
+  margin: 0;
+  border-top: 1px solid #666;
+  color:rgb(175,225,50);
+  font-family: 'Roboto Slab', serif;
+  }
+
+.accordion-control:hover{
+    color:rgb(70,69,65);
+    background-color:rgb(211,203,194);
+    border-color:rgb(175,225,50);
+}
+
+.accordion-panel {
+  display: none;
+  padding:20px;}
+
+\
+
+.accordion-panel img {
+  display: block;
+
+  clear: left;}
+
+.letter_content {
+  margin-right:50px;
+  width:310px;
+  float:left;
+  margin-top:0px;
+  margin-bottom:50px;
+  min-height:200px;
+
+}
+
+.letter {
+  float:left;
+  font-size:36pt;
+  font-family:'Times';
+  color:rgb(70,69,65);
+}
+
+.letter_wrapper{
+  display:block;
+  min-height:1000px;
+}
+
+
+#fermi{
+  background-image:url(../images/universe.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:bottom center;
+  background-color: hsla(0,0%,100%,0.70);
+  background-blend-mode: overlay;
+
+}
+
+.stop{
+  height:100px;
+  width:100%;
+  margin-top:40px;
+  margin-bottom:10px;
+  background-color:white;
+}
+
+.wikipedia {
+
+  border:2px solid rgb(211,203,194);
+  display:block;
+  padding:0px;
+  width:700px;
+  min-height:100px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:40px;
+}
+
+
+#wikipedia_header{
+  text-align:left;
+  background-color: rgb(70,69,65);
+  display: block;
+  padding: 0.5em 0.5em 0.5em 1.5em;
+  border-top: 1px solid #666;
+  color:rgb(175,225,50);
+  font-family: 'Roboto Slab', serif;
+}
+
+
+#wikipedia_fact{
+  position:relative;
+  color: black;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+    font-size:11pt;
+    font-weight:100;
+}
+
+#wikipedia_fact img{
+  margin-left:4px;
+  margin-bottom:4px;
+}

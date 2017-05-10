@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../jgray/css/style.css" type ="text/css">
+	<link rel="shortcut icon" href="../jgray/images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Work+Sans|Roboto+Condensed" rel="stylesheet">
+	<style>
+.mySlides {display:none}
+.arrow{color:#fff;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0;border-radius:50%;background-color:#000;color:#fff;display:inline-block;}
+.slide_number{
+	height:10px;
+	width:10px;
+	border-color:red;
+}
+.active_slide{
+	background-color:white;
+}
+
+.inactive_slide{
+	background-color:silver;
+}
+
+.w3-border{border:1px solid #ccc!important}
+.w3-left{float:left!important}
+.w3-right{float:right;margin-right:30px;}
+.w3-transparent{background-color:transparent!important}
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-center{display:inline-block;width:auto;text-align:center}
+.w3-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.w3-container:after,.w3-container:before{content:"";clear:both;padding:0.01em 16px}
+.w3-section{
+	display:inline-block;
+	margin-top:16px!important;margin-bottom:16px!important
+}
+.display_container{position:relative;}
+</style>
+	<title>Julia Gray</title>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83613903-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body id="no_portrait">
+<div class="container">
+	<header class="header">
+		<div class ="header_title_wrapper">
+			<h1 class ="header_title">
+				<a href="../index.html">Julia Gray</a>
+			</h1>
+		</div>
+		<div class = "header_nav_wrapper">
+			<ul class="header_nav">
+				<li><a href ="../about.html">About</a></li>
+				<li><a href ="../projects/projects.html">Projects</a></li>
+				<li><a href ="../posts/posts.html">Blog</a></li>
+				<li><a href ="../contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+<section class="blog_post">
+	<h2 class="blog_post_title">Memory and Imagination</h2>
+	<div class="blog_post_content">
+<p>Walkthrough of memory</p></br>
+
+
+<div class="display_container">
+  <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_fjords_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
+  <div class="w3-center w3-section w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left arrow" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right arrow" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+	<p>The name is a portmanteau of 'gray area' and '<a href="https://en.wikipedia.org/wiki/Areopagus">Areopagus</a>,' which was an ancient Athenian court mentioned in Euripides' Orestes. The resulting combination means an attempt to analyze and judge things that are ambiguous. Here's a catalog of Gray Areopagus:</p></br>
+
+	<ol class="epoch_list">
+		<li><a href="http://grayareopagus.com/ai/ai.html">Artificial Intelligence</a> - what is the current landscape of AI and what are some projections from the future (current research + sci fi)</li>
+		<li><a href="http://grayareopagus.com/space/space.html">Space</a> - The landscape of our solar system and the Fermi paradox</li>
+		<li><a href="http://grayareopagus.com/neuroscience/neuroscience.html">Neuroscience</a> - Amazing articles from an assortment of visionaries</li>
+		<li><a href="http://grayareopagus.com/wikipedia/wikipedia.html">Wikipedia</a> - Surf through some of my favorite Wikipedia pages</li>
+		<li><a href="http://grayareopagus.com/calculator/calculator.html">Calculator</a> - Do your everyday arithmatic using the Mayan system of human apendages</li>
+		<li><a href="http://grayareopagus.com/crosswords/puzzle1.html">Crosswords</a> - Try to solve some of my original crosswords (best way to improve your memory)</li>
+		<li><a href="http://grayareopagus.com/TriviaTetris/trivia_tetris.html">Trivia Tetris</a> - Study for a big test <i>WHILE</i> wasting your time</li>
+		<li><a href="http://grayareopagus.com/about.html">About</a> - email me at julia@grayareopagus.com</li>
+	</ol></br>
+	</div>
+</section>
+</div>
+
+
+<footer class ="footer">
+	<div class="footer_info">
+		<ul class="social_links">
+			<li> <a href="mailto:juliahydegray@gmail.com" class="email">Email</a></li>
+			<li> <a href="http://twitter.com/LilJGray" class="twitter">Twitter</a></li>
+			<li> <a href="http://instagram.com/jgray4494" class="instagram">Instagram</a></li>
+			<li> <a href="http://github.com/j4gray" class="github">Github</a></li>
+		</ul>
+		<p class="footnotes">Created by Julia Gray &#169; 2016.</p>
+	</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Julia Gray's blog with topics including the Fermi Paradox, backpacking in Peru, and virtual reality">
+	<link rel="stylesheet" href="../jgray/css/style.css" type ="text/css">
+	<link rel="shortcut icon" href="../jgray/images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Work+Sans|Montserrat|Roboto+Condensed" rel="stylesheet">
+	<title>Julia Gray</title>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83613903-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<style>
+.blog_container {min-height:1100px;}
+</style>
+</head>
+
+<body id ="no_portrait">
+<div class="blog_container">
+	<header class="header">
+		<div class ="header_title_wrapper">
+			<h1 class ="header_title">
+				<a href="../index.html">Julia Gray</a>
+			</h1>
+		</div>
+		<div class = "header_nav_wrapper">
+			<ul class="header_nav">
+				<li><a href ="../about.html">About</a></li>
+				<li><a href ="../projects/projects.html">Projects</a></li>
+				<li>Blog</li>
+				<li><a href ="../contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section class="main_contact">
+	<h2 class="contact_heading">Blog</h2>
+	<p class="main_content">I periodically blog on a variety of topics including <span style="color:rgb(13,191,132)">travel</span>, <span style="color:rgb(157,71,191)">books/movies</span>, and <span style="color:rgb(63,117,171)">current events</span></p> 
+	<button id="key" type="button" onclick="categorize()">Categorize</button>
+	<button id="undo_key" type="button" onclick="uncategorize()">Uncategorize</button>
+
+	<script>
+		function categorize() {
+    	var x = document.getElementsByClassName("travel_post");
+    	var i;
+   		for (i = 0; i < x.length; i++) {
+        	x[i].style.backgroundColor = "rgba(13,191,132,0.2)";
+    		}
+
+    	var y = document.getElementsByClassName("book_post");
+    	var j;
+    	for (j = 0; j< y.length; j++) {
+    		y[j].style.backgroundColor = "rgba(157,71,191,0.2)";
+    		}
+
+    	var z = document.getElementsByClassName("news_post");
+    	var k;
+    	for (k = 0; k< z.length; k++) {
+    		z[k].style.backgroundColor = "rgba(63,117,171,0.2)";
+    		}
+
+    	document.getElementById("undo_key").style.visibility = "visible";
+    	document.getElementById("key").style.visibility = "hidden";
+
+		}
+
+
+		function uncategorize() {
+    	var x = document.getElementsByClassName("travel_post");
+    	var i;
+   		for (i = 0; i < x.length; i++) {
+        	x[i].style.backgroundColor = "white";
+    		}
+
+    	var y = document.getElementsByClassName("book_post");
+    	var j;
+    	for (j = 0; j< y.length; j++) {
+    		y[j].style.backgroundColor = "white";
+    		}
+
+    	var z = document.getElementsByClassName("news_post");
+    	var k;
+    	for (k = 0; k< z.length; k++) {
+    		z[k].style.backgroundColor = "white";
+    		}
+
+    	document.getElementById("undo_key").style.visibility = "hidden";
+    	document.getElementById("key").style.visibility = "visible";
+		}
+	</script>
+
+	<ul class="post_list">
+
+	<li class="news_post">
+	<div class="post_info">
+		<a href="./Simulation.html">
+		<p class="dates">Mar 9 2017</p>
+		</a>
+	</div>
+
+	<div class="post_content">
+		<a href="./Simulation.html">
+		<h3 class="post_title">Simulation Hypothesis</h3>
+		<p class="post_headline">Is it possible we are living in the Matrix?</p>
+		</a></div>
+	</li>
+
+	<li class="news_post">
+	<div class="post_info">
+		<a href="./HansRosling.html">
+		<p class="dates">Feb 8 2017</p>
+		</a>
+	</div>
+
+	<div class="post_content">
+		<a href="./HansRosling.html">
+		<h3 class="post_title">RIP Hans Rosling</h3>
+		<p class="post_headline">Informing the world with data-driven stories</p>
+		</a></div>
+	</li>
+
+	<li class="news_post">
+	<div class="post_info">
+		<a href="./Obama_data.html">
+		<p class="dates">Jan 29 2017</p>
+		</a>
+	</div>
+
+	<div class="post_content">
+		<a href="./Obama_data.html">
+		<h3 class="post_title">8 Years of Obama in Data</h3>
+		<p class="post_headline">NOT alternative facts</p>
+		</a></div>
+	</li>
+
+	<li class="travel_post">
+	<div class="post_info">
+		<a href="./Guatemala.html">
+		<p class="dates">Nov 28 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Guatemala.html">
+		<h3 class="post_title">Guatemala</h3>
+		<p class="post_headline">Getting outta Dodge</p>
+		</a></div>
+	</li>
+
+	<li class="news_post">
+	<div class="post_info">
+		<a href="./Election_coverage.html">
+		<p class="dates">Oct 27 2016</p>
+		</a>
+	</div>
+
+	<div class="post_content">
+		<a href="./Election_coverage.html">
+		<h3 class="post_title">Election Coverage</h3>
+		<p class="post_headline">The circus that is the 2016 election</p>
+		</a></div>
+	</li>
+
+	<li class="news_post">
+	<div class="post_info">
+		<a href="./Spacex.html">
+		<p class="dates">Sep 27 2016</p>
+		</a>
+	</div>
+
+	<div class="post_content">
+		<a href="./Spacex.html">
+		<h3 class="post_title">Making Humans a Multiplanetary Species</h3>
+		<p class="post_headline">Elon Musk's plan to colonize Mars</p>
+		</a></div>
+	</li>
+
+	<li class="book_post">
+	<div class="post_info">
+		<a href="./Fermi.html">
+		<p class="dates">Sep 16 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Fermi.html">
+		<h3 class="post_title"><i>If the Universe is Teeming with Aliens: Where is Everybody?</i></h3>
+		<p class="post_headline">Fifty Solutions to the Fermi Paradox</p>
+		</a></div>
+	</li>
+
+	<li class="news_post">
+	<div class="post_info">
+		<a href="./ElectionPharma.html">
+		<p class="dates">Aug 29 2016</p>
+		</a>
+	</div>
+
+	<div class="post_content">
+		<a href="./ElectionPharma.html">
+		<h3 class="post_title">Election Buzz: Pharma & Biotech</h3>
+		<p class="post_headline">Misconceptions promoted to score political points</p>
+		</a></div>
+	</li>
+
+	<li class="book_post">
+	<div class="post_info">
+		<a href="./LoandBehold.html">
+		<p class="dates">Aug 26 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./LoandBehold.html">
+		<h3 class="post_title">Lo and Behold (2016)</h3>
+		<p class="post_headline">The birth and uptake of the internet</p>
+		</a></div>
+	</li>
+
+	<li class="book_post">
+	<div class="post_info">
+		<a href="./Singularity.html">
+		<p class="dates">Aug 8 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Singularity.html">
+		<h3 class="post_title"><i>The Singularity is Near</i> by Ray Kurzweil</h3>
+		<p class="post_headline">What better way to plan your future than read an acclaimed futurist?</p>
+		</a></div>
+	</li>
+
+	<li class="travel_post">
+	<div class="post_info">
+		<a href="./Nasca_Paracas.html">
+		<p class="dates">Jul 30 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Nasca_Paracas.html">
+		<h3 class="post_title">Nasca & Paracas</h3>
+		<p class="post_headline">Beyond the Inca civilization</p>
+		</a></div>
+	</li>
+
+	<li class="travel_post">
+	<div class="post_info">
+		<a href="./Arequipa_Colca.html">
+		<p class="dates">Jul 25 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Arequipa_Colca.html">
+		<h3 class="post_title">Arequipa & Colca Canyon</h3>
+		<p class="post_headline">When in Rome</p>
+		</a></div>
+	</li>
+
+	<li class="travel_post">
+	<div class="post_info">
+		<a href="./Sacred_Valley.html">
+		<p class="dates">Jul 23 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Sacred_Valley.html">
+		<h3 class="post_title">Sacred Valley</h3>
+		<p class="post_headline">Inca engineering</p>
+		</a></div>
+	</li>	
+
+
+	<li class="travel_post">
+	<div class="post_info">
+		<a href="./Salkantay_MP.html">
+		<p class="dates">Jul 19 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Salkantay_MP.html">
+		<h3 class="post_title">Salkantay Trek & Machu Picchu</h3>
+		<p class="post_headline">Breathtaking, literally</p>
+		</a></div>
+	</li>
+
+
+	<li class="travel_post">
+	<div class="post_info">
+		<a href="./Cusco.html">
+		<p class="dates">Jul 13 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Cusco.html">
+		<h3 class="post_title">Cusco</h3>
+		<p class="post_headline">Cathedrals and connections</p>
+		</a></div>
+	</li>
+
+	
+	<li class="travel_post">
+	<div class="post_info">
+		<a href="./Lima_Cusco.html">
+		<p class="dates">July 9 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Lima_Cusco.html">
+		<h3 class="post_title">Lima</h3>
+		<p class="post_headline">Conversational in ceviche</p>
+		</a></div>
+	</li>
+
+	<li class="news_post">
+	<div class="post_info">
+		<a href="./teslasolarcity.html">
+		<p class="dates">Jun 21 2016</p>
+		</a>
+	</div>
+
+	<div class="post_content">
+		<a href="./teslasolarcity.html">
+		<h3 class="post_title">Tesla / Solar City merger</h3>
+		<p class="post_headline">Elon Musk's proposal for a vertically integrated energy company</p>
+		</a></div>
+	</li>
+
+	<li class="book_post">
+	<div class="post_info">
+		<a href="./Ready_Player_One.html">
+		<p class="dates">Jun 20 2016</p>
+		</a>
+	</div>
+	<div class="post_content">
+		<a href="./Ready_Player_One.html">
+		<h3 class="post_title"><i>Ready Player One</i> by Ernest Cline</h3>
+		<p class="post_headline">A voyage through virtual reality</p>
+		</a></div>
+	</li>
+	
+	</ul>
+	</section>
+	</div>
+
+	<footer class ="footer">
+	<div class="footer_info">
+		<ul class="social_links">
+			<li> <a href="mailto:juliahydegray@gmail.com" class="email">Email</a></li>
+			<li> <a href="http://twitter.com/LilJGray" class="twitter">Twitter</a></li>
+			<li> <a href="http://instagram.com/jgray4494" class="instagram">Instagram</a></li>
+			<li> <a href="http://github.com/j4gray" class="github">Github</a></li>
+		</ul>
+		<p class="footnotes">Created by Julia Gray &#169; 2016.</p>
+	</div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../jgray/css/style.css" type ="text/css">
+  <link rel="shortcut icon" href="../jgray/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Work+Sans|Roboto+Condensed" rel="stylesheet">
+  <title>Julia Gray</title>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83613903-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+var tooltips = document.querySelectorAll('.hastooltip');
+for(var i = 0; i < tooltips.length; i++) {
+    tooltips[i].addEventListener('mousemove', function fn(e) {
+        var tooltip = e.target.classList.contains("tooltip") ?
+            e.target :
+            e.target.querySelector(':scope .tooltip');
+        tooltip.style.left =
+            e.pageX + tooltip.clientWidth + 10 <
+            document.body.clientWidth ?
+            e.pageX + 10 + 'px' :
+            document.body.clientWidth + 5 - tooltip.clientWidth + 'px';
+        tooltip.style.top =
+            e.pageY + tooltip.clientHeight + 10 <
+            document.body.clientHeight ?
+            e.pageY + 10 + 'px' : 
+            document.body.clientHeight + 5 - tooltip.clientHeight + 'px';
+    });
+}
+</script>
+
+
+<style>
+* {box-sizing:border-box;}
+
+#cosmic_calendar {
+  display:block;
+  margin-left:150px;
+}
+
+
+.month_day {
+    width:20%;
+    display:inline-block;
+}
+.month {
+    padding: 10px 10px;
+    width: 100%;
+    background: rgb(200,200,200);
+}
+
+.month ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.days {
+    font-family: 'Work Sans', sans-serif;
+    padding: 5px 0;
+    background: rgb(280,280,280);
+    margin: 0;
+    color:rgb(200,200,200);
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+}
+
+.days li:hover {
+    color: black 
+    }
+
+
+.hastooltip {
+    color:rgb(240,150,5);
+    cursor: pointer;
+}
+
+.hastooltip:hover .tooltip {
+    display: block;
+    color: black;
+}
+
+.tooltip {
+    width:256px;
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    text-align:left;
+    max-width:225px;
+    display: none;
+    background-image:linear-gradient(
+      white, rgb(200,200,200)
+    );
+    border-radius:10px;
+    border: 4px solid rgba(150,150,150,0.5);
+    padding: 5px;
+    z-index: 1000;
+}
+
+.tooltip a {
+  color:rgb(188,38,17);
+  text-decoration:none;
+
+}
+
+.graph {
+  width:800px;
+  margin-right:auto;
+  margin-left:auto;
+
+}
+.video {
+  width:640px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  text-align:center;
+  margin-top:10px;
+  font-size: 12pt;
+  font-style: none;
+}
+
+h2 {
+  font-family:'Roboto Slab', serif;
+  text-align:center;
+  margin-top:20px;
+  
+}
+
+
+.slide {
+  position:relative;
+  z-index:10;
+  margin-top:20px;
+  margin-bottom:240px;
+}
+
+.slide img {
+  position:absolute;
+  top:10px;
+  left:132px;
+}
+.system_info {
+  max-width:56px;
+  z-index:100;
+}
+
+.system_info p{
+  color:rgba(300,300,300,0)
+}
+
+.UK_provider {
+  z-index:110;
+  position:relative;
+  top:180px;
+  margin-left:305px;
+}
+
+.UK_payer {
+  z-index:110;
+  position:relative;
+  top:235px;
+  margin-left:305px;
+}
+
+.UK_access{
+  z-index:110;
+  position:relative;
+  top:295px;
+  margin-left:305px;
+}
+
+.France_provider {
+  z-index:110;
+  position:relative;
+  top:75px;
+  margin-left:510px;
+}
+
+.France_payer {
+  z-index:110;
+  position:relative;
+  top:130px;
+  margin-left:510px;
+}
+
+.France_access {
+  z-index:110;
+  position:relative;
+  top:190px;
+  margin-left:510px;
+}
+.Canada_provider {
+  z-index:110;
+  position:relative;
+  top:-35px;
+  margin-left:720px;
+}
+
+.Canada_payer {
+  z-index:110;
+  position:relative;
+  top:20px;
+  margin-left:720px;
+}
+
+.Canada_access {
+  z-index:110;
+  position:relative;
+  top:90px;
+  margin-left:720px;
+}
+
+.Vet_provider {
+  z-index:110;
+  position:relative;
+  top:180px;
+  margin-left:305px;
+}
+
+.Vet_payer {
+  z-index:110;
+  position:relative;
+  top:235px;
+  margin-left:305px;
+}
+
+.Vet_access{
+  z-index:110;
+  position:relative;
+  top:295px;
+  margin-left:305px;
+}
+
+.Emp_provider {
+  z-index:110;
+  position:relative;
+  top:75px;
+  margin-left:510px;
+}
+
+.Emp_payer {
+  z-index:110;
+  position:relative;
+  top:130px;
+  margin-left:510px;
+}
+
+.Emp_access {
+  z-index:110;
+  position:relative;
+  top:190px;
+  margin-left:510px;
+}
+.Med_provider {
+  z-index:110;
+  position:relative;
+  top:-35px;
+  margin-left:720px;
+}
+
+.Med_payer {
+  z-index:110;
+  position:relative;
+  top:20px;
+  margin-left:720px;
+}
+
+.Med_access {
+  z-index:110;
+  position:relative;
+  top:90px;
+  margin-left:720px;
+}
+
+.uninsured {
+  z-index:110;
+  position:relative;
+  top:170px;
+  margin-left:490px;
+}
+
+.bibliography {
+  font-size:10pt;
+  margin-top:20px;
+  margin-left:10%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.bibliography a{
+  color:rgb(188,38,17);
+  text-decoration:none;
+
+}
+
+/* Add media queries for smaller screens */
+
+</style>
+</head>
+<body>
+
+  <body id="no_portrait">
+<div class="container">
+  <header class="header">
+    <div class ="header_title_wrapper">
+      <h1 class ="header_title">
+        <a href="../index.html">Julia Gray</a>
+      </h1>
+    </div>
+    <div class = "header_nav_wrapper">
+      <ul class="header_nav">
+        <li><a href ="../about.html">About</a></li>
+        <li><a href ="../projects/projects.html">Projects</a></li>
+        <li><a href ="../posts/posts.html">Blog</a></li>
+        <li><a href ="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+<section class="blog_post">
+  <h2 class="blog_post_title">Healthcare Systems</h2>
+  <div class="blog_post_content">
+  <p>The United States has a unique and complex healthcare system. Unlike other developed countries, we do not have government sponsered health insurance and while it allows Americans to have greater freedom in selecting their healthcare provider, it also drives up costs and leaves many without any form of insurance. This is a presentation I made with a classmate on the current state of the healthcare systems around the world and how they compare to the U.S.</p></br>
+
+
+<div class="video">
+<iframe src="https://player.vimeo.com/video/184962734" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/184962734">Why Healthcare in the United States Needs Reform</a> on <a href="https://vimeo.com">Vimeo</a>.</p></br>
+<p>View the <a href="./HealthSystems.pdf">slides</a>.</p>
+</div>
+
+</section>
+
+
+<h2>Explore the presenation</h2>
+<h3>Hover over data points for country information</h3>
+<div class="graph">
+  <iframe width="800" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jgray/16.embed"></iframe>
+</div>
+
+<div class="graph">
+  <iframe width="800" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jgray/6.embed"></iframe>
+</div>
+
+<div class="graph">
+  <iframe width="800" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jgray/14.embed"></iframe>
+</div>
+
+<h2>Explore the slides:</h2>
+<h3>Hover over the icons for more information on the specifics of the health system</h3>
+
+<div class="slide">
+  <div class="system_info">
+    <div class="UK_provider"><p class="hastooltip">UK provider<span class="tooltip">The National Health Service owns and operates the <a href="https://en.wikipedia.org/wiki/Healthcare_in_the_United_Kingdom">hospitals in the UK</a>.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="UK_payer"><p class="hastooltip">UK payer<span class="tooltip">The <a href="https://en.wikipedia.org/wiki/National_Health_Service">NHS</a> is funded through taxes and the National Institute for Health and Care Excellence (<a href="https://en.wikipedia.org/wiki/National_Institute_for_Health_and_Care_Excellence">NICE</a>) establishes cost effective protocols that dictate pricing.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="UK_access"><p class="hastooltip">UK access<span class="tooltip">All residents of the UK are eligible for <a href="https://en.wikipedia.org/wiki/National_Health_Service#People_not_eligible_for_free_treatment">free treatment</a> as well as those with a <a href="https://en.wikipedia.org/wiki/European_Health_Insurance_Card">European Health Insurance Card</a>.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="France_provider"><p class="hastooltip">France provider<span class="tooltip">Hospitals are both <a href="https://en.wikipedia.org/wiki/Health_care_in_France#Health_care_system">publically and privately</a> owned (by non-profit and for-profit comapnies).</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="France_payer"><p class="hastooltip">France payer<span class="tooltip"><a href="https://en.wikipedia.org/wiki/Social_insurance">Social insurance</a> is a type of public health insurance where the fund is <a href="https://en.wikipedia.org/wiki/Healthcare_in_Germany#Health_insurance">managed by the goverment</a>.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="France_access"><p class="hastooltip">France access<span class="tooltip">Entire population must pay <a href="https://en.wikipedia.org/wiki/Healthcare_in_Germany#Health_insurance">compulsory health insurance</a> and choose a <a href="https://en.wikipedia.org/wiki/Health_care_in_France#Health_care_system">general practicioner</a> to act as a "gate keeper."</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Canada_provider"><p class="hastooltip">Canada provider<span class="tooltip">Services are mostly provided by <a href="https://en.wikipedia.org/wiki/Health_care_in_Canada">private entities</a>.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Canada_payer"><p class="hastooltip">Canada payer<span class="tooltip">The Government operates <a href="https://en.wikipedia.org/wiki/Health_care_in_Canada#Economics">publically funded health insurance</a> that is transferred from the Canadian federal goverment to the provinces where it is subject to board regulations.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Canada_access"><p class="hastooltip">Canada access<span class="tooltip">All <a href="https://en.wikipedia.org/wiki/Medicare_(Canada)">legal residents</a> of Canada are coverged and entitled to receive "insured services" without copayment.</span></p></div>
+  </div>
+
+  <img width="720" src="../jgray/images/health_slides_systems.jpg"></br>
+</div>
+
+<div class="slide">
+
+    <div class="system_info">
+    <div class="Vet_provider"><p class="hastooltip">Vet provider<span class="tooltip">The Veterans Health Administration (<a href="https://en.wikipedia.org/wiki/Veterans_Health_Administration">VHA</a>) operates VA Medical Centers, Clinics, and Community Leaving Centers.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Vet_payer"><p class="hastooltip">Vet payer<span class="tooltip">The budget is part of the United States Department of Veterans Affairs (<a href="https://en.wikipedia.org/wiki/United_States_Department_of_Veterans_Affairs">VA</a>).</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Vet_access"><p class="hastooltip">Vet access<span class="tooltip"><a href="https://en.wikipedia.org/wiki/Veterans_Health_Administration#Eligibility_for_VA_health_care_benefits">Eligibility</a> restricted to those who served in the active military, naval, or air service and separated under any condition other than dishonorable.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Emp_provider"><p class="hastooltip">Employer provider<span class="tooltip">Health care facilities are largely owned and operated by <a href="https://en.wikipedia.org/wiki/Health_care_in_the_United_States">private sector</a> businesses</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Emp_payer"><p class="hastooltip">Employer payer<span class="tooltip">Paid for <a href="Employer-sponsored health insurance is paid for by businesses on behalf of their employees as part of an employee benefit package">by businesses</a> on behalf of their employees as part of an employee benefit package</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Emp_access"><p class="hastooltip">Employer access<span class="tooltip">Employer-sponsored health insurance is the biggest form of private health insurance and covers some <a href="http://www.census.gov/prod/2008pubs/p60-235.pdf">60% of Americans</a>.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Med_provider"><p class="hastooltip">Medicare access<span class="tooltip">Health care facilities are largely owned and operated by <a href="https://en.wikipedia.org/wiki/Health_care_in_the_United_States">private sector</a> businesses</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Med_payer"><p class="hastooltip">Medicare payer<span class="tooltip">Social insurance (<a href="https://en.wikipedia.org/wiki/Medicare_(United_States)">Medicare</a>) is a fund operated by the goverment to spread the risk and social welfare programs (<a href="https://en.wikipedia.org/wiki/Medicaid">Medicaid</a> and the <a href="https://en.wikipedia.org/wiki/State_Children%27s_Health_Insurance_Program">State Children's Health Insurance Program</a>) provide assistance to people who can't afford it.</span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="Med_access"><p class="hastooltip">Medicare access<span class="tooltip">In general, all persons over 65 who have been legal residens for at least five years are <a href="https://en.wikipedia.org/wiki/Medicare_(United_States)#Eligibility">eligible</a> forMedicare and Medicaid is a intended for those with <a href="https://en.wikipedia.org/wiki/Medicaid#Eligibility_and_benefits">low income</a></span></p></div>
+  </div>
+
+  <div class="system_info">
+    <div class="uninsured"><p class="hastooltip">Uninsured<span class="tooltip">According to the <a href="https://en.wikipedia.org/wiki/Health_insurance_coverage_in_the_United_States>">United States Census Bureau</a>, in 2012 there were 48.0 million people in the US (15.4% of the population) who were without health insurance.</span></p></div>
+  </div>
+  <img width="720" src="../jgray/images/health_slides_US.jpg"></br>
+
+</div>
+
+  <div class="bibliography">
+  </br></br></br></br></br></br></br></br>
+
+  <p>The World Health Organization, Global Health Expenditure Database. <i>Health Expenditure per Capita</i>. </br><a href="http://apps.who.int/nha/database">http://apps.who.int/nha/database</a>.<p></br>
+
+  <p>The World Health Organization, Global Health Observatory. <i>Life Expectancy</i>. </br><a href="http://www.who.int/gho/mortality_burden_disease/life_tables/situation_trends/en/">http://www.who.int/gho/mortality_burden_disease/life_tables/situation_trends/en/</a>.<p></br>
+
+  <p>The World Health Organization, Global Health Observatory. <i>Under-five Mortality</i>. </br><a href="http://www.who.int/gho/child_health/mortality/mortality_under_five_text/en/">http://www.who.int/gho/mortality_burden_disease/life_tables/situation_trends/en/</a>.<p></br>
+
+</div>
+
+
+
+
+
+
+<footer class ="footer">
+  <div class="footer_info">
+    <ul class="social_links">
+      <li> <a href="mailto:juliahydegray@gmail.com" class="email">Email</a></li>
+      <li> <a href="http://twitter.com/LilJGray" class="twitter">Twitter</a></li>
+      <li> <a href="http://instagram.com/jgray4494" class="instagram">Instagram</a></li>
+      <li> <a href="http://github.com/j4gray" class="github">Github</a></li>
+    </ul>
+    <p class="footnotes">Created by Julia Gray &#169; 2016.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

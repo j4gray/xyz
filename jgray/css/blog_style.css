@@ -1,0 +1,172 @@
+figure {
+    margin-top:8px;
+    margin-bottom:16px;
+
+}
+
+img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+figcaption {
+    color:rgb(120,120,120);
+    font-size:10pt;
+    font-style:italic;
+    text-align:center
+}
+
+h1.header_title a:hover {
+    color:white;
+}
+
+.header_nav li a:hover{
+    color:rgb(240,150,5);
+}
+
+
+
+
+.lima_portrait{
+	background-image:url(../images/peru/lima_beach.jpg);
+    min-height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    
+}
+
+.lima_park {
+	background-image:url(../images/peru/lima_park.jpg);
+	min-height:500px;
+	background-size:cover;
+	background-repeat:no-repeat;
+    background-position:center center;
+
+}
+
+#lima_interview {
+	background-image:url(../images/peru/lima_interview.jpg);
+
+}
+
+.cusco_portrait{
+	background-image:url(../images/peru/cusco.jpg);
+    min-height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    
+}
+
+.san_cristobal {
+	background-image:url(../images/peru/san_cristobal.jpg);
+	min-height:500px;
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-position:center center;
+
+}
+
+.MP_portrait{
+    background-image:url(../images/peru/Machu_Picchu.jpg);
+    min-height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.salkantay{
+    background-image:url(../images/peru/salkantay.jpg);
+    min-height:500px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.SV_portrait {
+    background-image:url(../images/peru/pisac.jpg);
+    min-height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.tipon{
+    background-image:url(../images/peru/tipon2.jpg);
+    min-height:500px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.Arequipa_portrait {
+    background-image:url(../images/peru/colca_arequipa.jpg);
+    min-height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.colca {
+    background-image:url(../images/peru/colca.jpg);
+    min-height:500px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.NP_portrait {
+    background-image:url(../images/peru/paracas.jpg);
+    min-height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.nasca_astronaut {
+    background-image:url(../images/peru/nasca_astronaut.jpg);
+    min-height:500px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+
+.guat_portrait{
+    background-image:url(../images/Guatemala.jpg);
+    min-height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    
+}
+#portrait_page .header_title a:hover {
+	color:white;
+}
+
+
+.hastooltip {
+    color:red;
+    font-style:italic;
+    cursor: pointer;
+}
+
+.hastooltip:hover .tooltip {
+    display: block;
+    color: black;
+}
+
+.tooltip {
+    position: absolute;
+    white-space: nowrap;
+    display: none;
+    background: #ffffcc;
+    border: 1px solid black;
+    padding: 5px;
+    z-index: 1000;
+}
+
+
+
