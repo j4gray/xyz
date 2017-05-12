@@ -962,8 +962,22 @@ textarea {
         right:10px;
     }
 
+    .wikipedia{
+        max-width:300px;
+    }
 
+    #wikipedia_fact img{
+        width:260px;
+    }
 
+    #wikipedia_header h3{
+        margin-right:10px;
+    }
+
+    .stop{
+        margin-top:1700px !important;
+
+    }
 }
 
 
