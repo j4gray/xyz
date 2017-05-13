@@ -75,7 +75,7 @@ html,body {
     line-height:3.0rem;
     text-transform:uppercase;
     font-size:12pt;
-    margin-right:32px;
+    margin-right:24px;
     letter-spacing:0.1rem;
     font-weight:200;
 }
@@ -962,8 +962,22 @@ textarea {
         right:10px;
     }
 
+    .wikipedia{
+        max-width:300px;
+    }
 
+    #wikipedia_fact img{
+        width:260px;
+    }
 
+    #wikipedia_header h3{
+        margin-right:10px;
+    }
+
+    .stop{
+        margin-top:1700px !important;
+
+    }
 }
 
 
