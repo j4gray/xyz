@@ -4,4 +4,4 @@ __pycache__/\
 *$py.class\
 \
 #Images
-/static/images/
+/static/images/*
