@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+  
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Work+Sans|Montserrat|Roboto+Condensed" rel="stylesheet">
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/accordion.css') }}" />
+	<title>Julia Gray</title>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83613903-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<style>
+
+</style>
+</head>
+
+<body id ="portrait_page">
+	<header class="header">
+		<div class ="header_title_wrapper">
+			<h1 class ="header_title white">
+				<a href="./">Julia Gray</a>
+			</h1>
+		</div>
+		<div class = "header_nav_wrapper">
+			<ul class="header_nav green">
+				<li><a href="./about">About</a></li>
+				<li>Almanac</li>
+				<li><a href ="./projects">Projects</a></li>
+				<li><a href ="./posts">Blog</a></li>
+				<li><a href ="./contact">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+<div class="almanac_portrait">
+	<div class="about_info">
+	<h1></h1>
+	</div>
+</div>
+
+<section class ="main">
+
+  <div class="wikipedia">
+
+
+    <div id="wikipedia_header"><h3>Wikpedia page of the month</h3></div>
+
+    <div class="tab">
+      <div class="dropdown">
+      <button onclick="openDropdown('myDropdown')" class="dropbtn">2017 +</button>
+        <div id="myDropdown" class="dropdown-content">
+          <button class="tablinks" onclick="openCity(event, 'May2017')" >May</button>
+          <button class="tablinks" onclick="openCity(event, 'June2017')" >June</button>
+          <button class="tablinks" onclick="openCity(event, 'July2017')">July</button>
+          <button class="tablinks" onclick="openCity(event, 'August2017')">August</button>
+          <button class="tablinks" onclick="openCity(event, 'September2017')">September</button>
+          <button class="tablinks" onclick="openCity(event, 'October2017')">October</button>
+          <button class="tablinks" onclick="openCity(event, 'November2017')">November</button>
+          <button class="tablinks" onclick="openCity(event, 'December2017')">December</button>
+        </div>
+    </div><br>
+    <div class="dropdown">
+      <button onclick="openDropdown('dropdown2018')" class="dropbtn">2018 +</button>
+      <div id="dropdown2018" class="dropdown-content">
+        <button class="tablinks" onclick="openCity(event, 'January2018')" >January</button>
+        <button class="tablinks" onclick="openCity(event, 'February2018')" >February</button>
+        <button class="tablinks" onclick="openCity(event, 'March2018')" >March</button>
+        <button class="tablinks" onclick="openCity(event, 'April2018')" >April</button>
+        <button class="tablinks" onclick="openCity(event, 'May2018')" >May</button>
+        <button class="tablinks" onclick="openCity(event, 'June2018')">June</button>
+        <button class="tablinks" onclick="openCity(event, 'July2018')">July</button>
+        <button class="tablinks" onclick="openCity(event, 'August2018')">August</button>
+        <button class="tablinks" onclick="openCity(event, 'September2018')">September</button>
+        <button class="tablinks" onclick="openCity(event, 'October2018')">October</button>
+        <button class="tablinks" onclick="openCity(event, 'November2018')">November</button>
+        <button class="tablinks" onclick="openCity(event, 'December2018')">December</button>
+      </div>
+    </div>
+    <button class="tablinks" onclick="openCity(event, 'January2019')" id="defaultOpen">January</button>
+    <!--<button class="tablinks" onclick="openCity(event, 'February2019')">February</button>-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+    <div class="wikipedia_fact tabcontent" id="May2017"><p>
+    
+    <img class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/PIA19656-SaturnMoon-Enceladus-Ocean-ArtConcept-20150915.jpg/1200px-PIA19656-SaturnMoon-Enceladus-Ocean-ArtConcept-20150915.jpg" alt="PIA19656-SaturnMoon-Enceladus-Ocean-ArtConcept-20150915.jpg" width="350" align="right"><a href="https://en.wikipedia.org/wiki/Enceladus">Enceladus</a> is a moon of Saturn that is approximately 500 km (310 mi) in diameter that is entirely covered by ice, making it an extremely reflective body in the solar system, and has a subsurface ocean. This was confirmed by observations of the large plumes spewing from the sourhtern polar surface, determined to be mostly water, with a small amount of hydrogen molecutles. The exhaust from these jets (250 kg of water every second) is shot out at up to 2,189 km/h (1,360 mph), immediatley freezes in space, and is caputured by Saturn's gravity, forming the E Ring.
+    </p></div>
+
+  <div id="June2017" class="wikipedia_fact tabcontent"><p>
+
+  <img border="0" alt="Thaw" class="wiki_image v" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Thaw_in_Tombs_jail.jpg" height="250" align="right">
+  <a href="https://en.wikipedia.org/wiki/Harry_Kendall_Thaw" target="_blank">Harry Kendall Thaw</a> (1871-1947) was a multimillionaire from Pittsburgh who moved to New York at the turn of the century and became obsessed with the renowned archietect <a href="https://en.wikipedia.org/wiki/Stanford_White">Standford White</a>. On the night of June 25, 1906, Thaw murdered White on the rooftop of Madison Square Garden in front of hundreds of witnesses with a revolver at close range. He was later was later found not guilty after two murder trials. </p> 
+</div>
+
+
+
+<div id="July2017" class="tabcontent wikipedia_fact">
+  
+  <img border="0", alt="Horse" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif" alt="Muybridge race horse animated.gif" height="200">
+  <p>Does a horse lift all four feet at any point when it's galloping? In order to find out Eadweard Muybridge took 24 photographs in rapid succession of a galloping horse, titled <a href="https://en.wikipedia.org/wiki/Sallie_Gardner_at_a_Gallop">Sallie Gardner at a Gallop</a>, that eventually shown on a zoopraxiscope in 1878 around the country, forshadowing the eventual explosion of motion pictures. The pictures showed clearly there is a point when the legs are pulled in that all four feet are off the ground.</p>
+</div>
+
+<div id="August2017" class="tabcontent wikipedia_fact">
+  
+  <img border="0" alt="Diana" class="wiki_image v" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F_%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE-%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%8F_18.jpg" height="300" align="right">
+  
+  <p>This year marks a decade that <a href="https://en.wikipedia.org/wiki/Diana,_Princess_of_Wales" target="_blank">Priness Diana</a> was killed in a car crash in Paris, on the night of August 31st. </p>
+</div>
+
+<div id="September2017" class="tabcontent wikipedia_fact">
+  
+
+  <img border="0" alt="Cassini" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Cassini_Saturn_Orbit_Insertion.jpg/1200px-Cassini_Saturn_Orbit_Insertion.jpg" height="200" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens#Grand_Finale_and_planned_destruction">Cassini</a> is a probe that was sent to Saturn in 1997 as a joint effort by NASA, The European Space Agenecy and the Italian Space Agency. It arrived in 2004 and has been surverying Saturn ever since. On September 15 2017, it will end it's final mission of taking photos within Saturn's rings before entering the atmosphere and burning up. </p>
+</div>
+
+<div id="October2017" class="tabcontent wikipedia_fact">
+  
+
+  <img border="0" alt="Puerto Rico" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/STS034-76-88.jpg" height="250" align="right">
+  <p>Puerto Rico is the one of the <a href="https://en.wikipedia.org/wiki/Pharmaceutical_industry_in_Puerto_Rico" target="_blank">largest exporters</a> of pharmaceuticals and medical devices in the world and accounts for more than half of all manufacturing on the island. Hurricane Maria, while reeking havoc on the US territory and it’s 3.3 million residents, devastatingly crippled the electrical grid. Most homes and factories are relying on diesel generators for power causing shortages of some drugs and medical products like saline solution.</p>
+</div>
+
+<div id="November2017" class="tabcontent wikipedia_fact">
+  
+  <p><a href="https://en.wikipedia.org/wiki/Capgras_delusion" target="_blank">Cagras delusion</a> is a psychiatric disorder in which a person holds a delusion that a friend, spouse, parent, or other close family member has been replace by an identical imposter. It is named after <a href="" target="_blank">Joseph Capgras</a> who first described the disorder in 1923 affecting a French woman known as "Madame Macabre."</p>
+</div>
+
+<div id="December2017" class="tabcontent wikipedia_fact">
+  
+
+  <img border="0" alt="Jackie in Ann Lowe" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Jacqueline_Bouvier_Kennedy_Onassis2.jpg" height="300" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Ann_Lowe" target="_blank">Ann Lowe</a> designed Jackie's dress when she married JFK; she was one of the most famous and desired designers among high society from the 1920s to the 1960s. She was the first African American to become a famous fashion designer and her name missing from the vernacular of fashion is a huge shame.</p>
+</div>
+
+<div id="January2018" class="tabcontent wikipedia_fact">
+  <img border="0" alt="Madam C. J. Walker" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Waffle_House_Restaurant_torn_apart_by_Hurricane_Katrina_on_the_Biloxi%2C_Mississippi_coast_LCCN2010630838.tif/lossy-page1-1200px-Waffle_House_Restaurant_torn_apart_by_Hurricane_Katrina_on_the_Biloxi%2C_Mississippi_coast_LCCN2010630838.tif.jpg" height="300" align="right">
+  <p>The <a href="https://en.wikipedia.org/wiki/Waffle_House_Index" target="_blank">Waffle House Index</a> is an informal metric used by FEMA to determine the effect of a storm and the likely scale of assistance required for disaster recovery: "if you get there and the Waffle House is closed? That's really bad"</p>
+</div>
+
+<div id="February2018" class="tabcontent wikipedia_fact">
+  <img border="0" alt="Madam C. J. Walker" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Madam_CJ_Walker_face_circa_1914.jpg" height="300" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Madam_C._J._Walker" target="_blank">Madam C. J. Walker</a> was the wealthiest African American businesswoman and wealthiest self made woman in America at the time of her death in 1919. Her fortune, estimated at $600,000, came from development and marketing of a line of cosmetics and hair care products for black women. She was well known for her philanthropy and activism including with the YMCA and the NAACP</p>
+</div>
+
+<div id="April2018" class="tabcontent wikipedia_fact">
+  <p>This <a href="https://en.wikipedia.org/wiki/List_of_lists_of_lists" target="_blank">List of lists</a> is a Wikipedia classic</p>
+</div>
+
+<div id="March2018" class="tabcontent wikipedia_fact">
+  <img border="0" alt="Francis Lawrence" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Francis_Lawrence_by_Gage_Skidmore_2.jpg/1200px-Francis_Lawrence_by_Gage_Skidmore_2.jpg" height="200" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Francis_Lawrence_videography" target="_blank">Francis Lawrence</a> is my favorite music video director; his hits include Britney Spears' <i>I'm a Slave 4 U</i>, Justin Timberlake's <i>Cry Me a River</i>, and Lady Gaga's <i>Bad Romance</i>. In 2012 he was brought on to take over direction of the Hunger Games franchise with <i>Catching Fire</i></p>
+</div>
+
+<div id="May2018" class="tabcontent wikipedia_fact">
+  <p>The word <a href="https://en.wikipedia.org/wiki/Mamihlapinatapai" target="_blank">Mamihlapinatapai</a>, from the Yaghan language of Tierra del Fuego, is listed in the <i>Guinness Book of World Records</i> as the "most succinct word." It translates as "a look shared by two people, each wishing that the other would initiate somethign that they both desire but which neither wants to begin."</p>
+</div>
+
+<div id="June2018" class="tabcontent wikipedia_fact">
+  <img border="0" alt="Mount Everest" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Arms_of_Counts_of_Habsbourg.svg/1200px-Arms_of_Counts_of_Habsbourg.svg.png" height="300" align="right">
+  <p>The <a href="https://en.wikipedia.org/wiki/House_of_Habsburg" target="_blank">House of Habsburg</a> was one of the most influential royal houses of Europe, occupying the throne of the Holy Roman Empire from 1438 until 1740. They consolidated power through inter-familial marriages often marrying first cousins or uncles and nieces. This eventually lead to such a small gene pool that the last of the Spanish line, <a href="https://en.wikipedia.org/wiki/Charles_II_of_Spain" target="_blank">Charles II</a>, was disabled from birth and had a genome 'comparable to taht of a child born to a brother and sister.'</p> 
+</div>
+
+<div id="July2018" class="tabcontent wikipedia_fact">
+  <img border="0" alt="Mount Everest" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Everest_kalapatthar.jpg/1200px-Everest_kalapatthar.jpg" height="300" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Mount_Everest" target="_blank">Mount Everest</a> is probably my brother's favorite Wikipedia page. He loves the 16-part section on <a href="https://en.wikipedia.org/wiki/Mount_Everest#History_of_expeditions" target="_blank">History of Expeditions</a>, which provides an overview and links to all the famous mountaineering disasters that have occured on Everest. There is also a good section on the commercialization of Everest and what is has meant for the local ecosystem and economy.</p> 
+</div>
+
+<div id="August2018" class="tabcontent wikipedia_fact">
+  <p>A <a href="https://en.wikipedia.org/wiki/Chewbacca_defense" target="_blank">Chewbacca defense</a> is a legal strategy in which a criminal defense lawyer tries to confuse the jury instead of refuting the case of the prosecutor, which comes from an episode of South park that satirizes the O. J. Simpson murder trial.</p> 
+</div>
+
+<div id="September2018" class="tabcontent wikipedia_fact">
+  <img border="0" alt="Charles V" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Charles_VI_de_France_-_Dialogues_de_Pierre_Salmon_-_Bib_de_Gen%C3%A8ve_MsFr165f4.jpg" height="300" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Charles_VI_of_France" target="_blank">Charles V</a> ruled from 1368 (when he was 11) until his death in 1422, and was known as both le Bien-Aimé (the beloved) and le Fol (the mad). He suffered from mental illness that caused him to be extremely paranoid and belive he was <a href="https://en.wikipedia.org/wiki/Glass_delusion" target="_blank">made of glass</a>.</p> 
+</div>
+
+
+<div id="October2018" class="tabcontent wikipedia_fact">
+  <img border="0" alt="Anglerfish" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Humpback_anglerfish.png" height="200" align="right">
+  <p>The <a href="https://en.wikipedia.org/wiki/Anglerfish" target="_blank">anglerfish</a> is well-known because of the distinctive luminescent 'lure' that grows from it's head, which is an organ called the esca. Less well known is the extreme '<a href="https://en.wikipedia.org/wiki/Sexual_dimorphism" target="_blank">sexual dimorphism</a>' between males and females in the reproductive process. Males are significally smaller than females and will die if they cannot attach themselves to a female and live parasitically off of them.</p> 
+</div>
+
+<div id="November2018" class="tabcontent wikipedia_fact">
+  
+  <p><a href="https://en.wikipedia.org/wiki/Xenotransplantation" target="_blank">Xenotransplantation</a> is the transplantation of living cells, tissues, or organs from one species to another. Contrast with allotransplantation, which invloves an individual of the same species, or autotransplantation, which is from one part of the body to another in the same person. The first attempt at xenotransplantation was in 1905 using slices of rabbit kidney to treat a child with renal insufficiency.</p>
+</div>
+
+<div id="December2018" class="tabcontent wikipedia_fact">
+  
+  <img border="0" alt="Naval Gazing" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Satyres_en_Atlante_Rome_Louvre_2.jpg/1200px-Satyres_en_Atlante_Rome_Louvre_2.jpg" height="200" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Omphaloskepsis"target="_blank">Omphaloskepsis</a> or 'naval gazing' is contemplation of one's naval as an aid to meditation. Today, it has come to mean self-absorbed pursuits of limited value.</p>
+</div>
+
+<div id="January2019" class="tabcontent wikipedia_fact">
+
+  <img border="0" alt="Empanadas" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Empanada_-_Stu_Spivack.jpg/1200px-Empanada_-_Stu_Spivack.jpg" height="200" align="right">
+  <p>The word '<a href="https://en.wikipedia.org/wiki/Empanada" target="_blank">empanada</a>' comes from the Spanish 'empanar' meaning 'enbreaded' (pan being bread) and they can be fried or baked and stuffed with anything you can imagine. One of my favorite parts about visiting Latin America is discovering what the local empanada variety is. Wikpedia provides a great guide by country and region</p>
+</div>
+
+<div id="February2019" class="tabcontent wikipedia_fact">
+  
+
+  <img border="0" alt="Cochon truffier" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cochon_truffier.JPG" height="200" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Truffle_hog" target="_blank">Truffle hogs</a> are used to locate the precious and expensive mushrooms.</p>
+</div>
+
+</div>
+
+<!--<div id="December2018" class="tabcontent wikipedia_fact">
+  
+
+  <img border="0" alt="Jackie in Ann Lowe" class="wiki_image h" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Jacqueline_Bouvier_Kennedy_Onassis2.jpg" height="200" align="right">
+  <p><a href="https://en.wikipedia.org/wiki/Ann_Lowe" target="_blank">Ann Lowe</a></p>
+</div>
+
+</div>-->
+
+
+
+
+	<h2 class="main_heading" id="almanac_heading">Almanac</h2>
+	<p class="main_content">A glossary of terms and tools that I frequently use</p>
+
+  
+
+
+	<div class="letter_wrapper">
+
+	<div class="letter_content">
+		<h2 class="letter">A</h2>
+		<ul class="accordion">
+
+		<li>
+          <button class="accordion-control">Aeschylus</button>
+          <div class="accordion-panel">
+          	<img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Aischylos_B%C3%BCste.jpg" alt="Aeschylus" width="210">
+            <p>Ancient Greek playwrite often described as the father of tragedy. Famous for <a href="https://en.wikipedia.org/wiki/Oresteia"><i>The Oresteia</i></a>, which is the only surviving example of a complete trilogy (the go-to format). Seven of his tragedies have survived intact and all of those won first prize at the <a href="https://en.wikipedia.org/wiki/Dionysia">City Dionysia</a> (well documented yearly theatrical competition in Athens dating back to the 6th century BC).</p>
+          </div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Apocalypse</button>
+          	<div class="accordion-panel">
+            	<p>The end of the world with possibilities for the impetus (including many of our own creation). The New Yorker wrote an <a href="http://www.newyorker.com/magazine/2017/01/30/doomsday-prep-for-the-super-rich">article</a> about how super wealthy tech moguls and entrepreneurs are prepping for Doomsday.</p>
+          	</div>
+        </li>
+        
+        
+        <li>
+          <button class="accordion-control">Areopagus</button>
+          <div class="accordion-panel">
+            <p>Court in ancient Athens used for trying homicide. Translated from the original greek <a href="https://en.wikipedia.org/wiki/Areopagus">Areios Pagos</a> as "Ares Rock." It makes an appearence in the <a href="https://en.wikipedia.org/wiki/Oresteia#The_Eumenides"><i>The Eumenides</i></a> of <i>The Oresteia</i> by Aeschylus (see entry) as the site of the trial of Orestes for killing his mother Clytemnestra and her lover Aegisthus.</p>
+          </div>
+        </li>
+
+        <li>
+         	<button class="accordion-control">Archive.org</button>
+          	<div class="accordion-panel">
+            	<p>Source of images and other content in the public domain. Easily <a href="https://archive.org/search.php?query=licenseurl:http*publicdomain*">search</a> by license. </p>
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Artificial Intelligence</button>
+          	<div class="accordion-panel">
+            	<p>Any agent that is capable of percieving it's environment and making goal oriented acitons. Currntly being pursued in many different ventues including autonomous driving, computer assistants, and infallible game players.</p>
+          	</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">B</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Books - favorites</button>
+          	<div class="accordion-panel">
+ 			<p> 
+            	<ul>
+            		
+            		<li>◦ <i>Harry Potter</i> by J.K. Rowling</li>
+            		<li>◦ <i>The Lord of the Rings</i> by J.R.R. Tolken</li>
+            		<li>◦ <i>The Picture of Dorian Gray</i> by Oscar Wilde</li>
+            		<li>◦ <i>Ready Player One</i> by Ernest Cline</li>
+            		<li>◦ <i>The Player of Games</i> by Iain M. Banks</li>
+            		<li>◦ <i>The Brothers Karamozov</i> by Fyoder Dostyevsky</li>
+                <li>◦ <i>Contact</i> by Carl Sagan
+            	</ul>
+            </p>
+
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Batteries</button>
+          	<div class="accordion-panel">
+ 			      <p> 
+            Battery technology is becoming increasingly important as we consume power off the grid (whether in our phones/computers or electric vehicles) and right now they play a central role in renewable energy thanks in part to efforts by Tesla to commotize a self-sustaining in house electrical system. Here is an excellent primer.
+            </p>
+
+          	</div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">C</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Consciousness</button>
+          	<div class="accordion-panel">
+ 			<p> 
+            One of the central unanswered questions in neuroscience is what gives rise to consciousness? It is also an issue that consciousness is not extremely easy to define and there are many interesting hypotheses dating back to <i>Cognito ergo sum</i> and other such classics of philosophy. Stephen Pinker has developed an interesting theory about consciounsess arising from synchronisity between neurons across brain functions. 
+            </p>
+
+          	</div>
+        </li>
+
+
+        <li>
+         	 <button class="accordion-control">Cosmos</button>
+          	<div class="accordion-panel">
+ 			<p> 
+            Carl Sagan was a pioneer of cosmology and one of the world's first scientific celebrities. Along with his wife, Ann Druyan, he produced a TV series to educate the American people on the known universe and the questions facing modern cosmologists (my favorite of which being the Fermi paradox).
+            </p>
+
+          	</div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">D</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Deus ex machina</button>
+          	<div class="accordion-panel">
+            	<p>'<a href="https://en.wikipedia.org/wiki/Deus_ex_machina">God from the machine</a>' used to mean a plot device where a previously unsolvable problem is resolved by the abrupt intervention of some new power, character, ability, or object (e.g. the <a href="https://en.wikipedia.org/wiki/Eagle_(Middle-earth)">eagles</a> at the end of <i>Lord of the Rings</i>).</p>
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Deep Learning</button>
+          	<div class="accordion-panel">
+            	<p>A class of machine learning algorithms that uses layers for feature extraction (i.e. to find patterns). The input of each successive layer is the output from the previous one. Google's <a href="https://en.wikipedia.org/wiki/AlphaGo">AlphaGo</a> beat the world chamption in Go in March 2016 using deep learning enabled by an <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">artifical neural network</a>.</p>
+          	</div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">E</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">EveryStockPhoto.com</button>
+          	<div class="accordion-panel">
+            	<p>A way to <a href="http://www.everystockphoto.com/">search</a> through photos in the public domain from combined sources including Wikipedia Commons, Flickr, and NASA.</p>
+          	</div>
+        	</li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">F</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Fermi Paradox</button>
+          	<div class="accordion-panel" id="fermi">
+            	<p>The observation that the observable universe has hundreds of millions of galaxies, which in turn have hundreds of millions of stars, any of which could support planets that sustain life. Given that intelligent life evolved on earth and the planet is relatively young in the universe (4 billion years out of the 14 billion since the big bang) it follows that another planet somewhere in the universe has also evolved intelligent life. The paradox is that we have not decerned any trace of an extraterrestrial civilization; as Enrico Fermi asked in 1950, "where is everyboy?"</p>
+          	</div>
+        	</li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">G</h2>
+		<ul class="accordion">
+
+		<li>
+         	<button class="accordion-control">Gapminder</button>
+          <div class="accordion-panel"
+            	<p>A <a href="http://www.gapminder.org/">tool</a> to query data and create interactive visualizations; the brainchild of <a href="https://www.ted.com/speakers/hans_rosling">Hans Rosling</a>.</p>
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Gaslight</button>
+          	<div class="accordion-panel">
+          		<img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Gaslight_1944_trailer%284%29.jpg" alt="Gaslight" width="210">
+            	<p>A form of social manipulation where the victim is forced the question the nature of their own reality. Based on a Hitchcock <a href="https://en.wikipedia.org/wiki/Gaslight_(1944_film)">film</a>.</p>
+          	</div>
+        	</li>
+
+        
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">I</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Information is Beautiful</button>
+          	<div class="accordion-panel">
+            	<p>Great <a href="http://www.informationisbeautiful.net/">repository for interesting data visualizations maintained by David McCandless. Also recommend his book <i>The Visual Miscellaneum</i></p>
+          	</div>
+        	</li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">H</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Hobson, Allan</button>
+          	<div class="accordion-panel">
+            	<p>Expert on the neuroscience of dreams. In <a href="https://en.wikipedia.org/wiki/Allan_Hobson">his studies</a> he has kept extensive dream diaries and often cites them in his work which is incredibly entertaining and will have you realizing just innate everthing in a dream is.</p>
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Hippocampus</button>
+          	<div class="accordion-panel">
+            	<p>The seat of memory as well as spatial awareness, the <a href="https://en.wikipedia.org/wiki/Hippocampus">hippocampus</a> is an extremely interesting neural structure. People with damaged hippocampi experience an inability to create new memories and very poor spatial reasoning ability (i.e. walking out of a hedge maze). There is a lot of interesting research being done on the mechanisms of the hippocampi and what role they play in larger cognitive functions. </p>
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Highly Superior Autobiographical Memory</button>
+          	<div class="accordion-panel">
+            	<p>People with <a href="https://en.wikipedia.org/wiki/Hyperthymesia">HSAM</a> remember every detail of their life perfectly archived by date. 60 minutes did a great interview and it really is astounding. If you have ever read <i>Funes the memorious</i> by Borges this may feel eerily familiar</p>
+          	</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">K</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Kurzweil, Ray</button>
+          	<div class="accordion-panel">
+            	<p>An <a href="https://en.wikipedia.org/wiki/Ray_Kurzweil">acclaimed futurist</a> whose books <i>The Age of Spiritual Machines</i> and <i>The Singularity is Near</i> predict an age where humans merge with our technology in order to overcome out biology (i.e. implant millions of blood-borne nanobots to regulate and repair our body from the inside - hooked up to a personal network with a neural interface connected to the internet).</p>
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Kandel, Eric</button>
+          	<div class="accordion-panel">
+          		<img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Gaslight_1944_trailer%284%29.jpg" alt="Gaslight" width="210">
+            	<p>An expert in human memory and a delightful neuroscientist, <a href="https://en.wikipedia.org/wiki/Eric_Kandel">Kandel's</a> work <i>In Search of Memory</i> laid the groundwork for our understanding of the mechanisms of memory.</p>
+          	</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">L</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Levine, Matt</button>
+          	<div class="accordion-panel">
+            	<p>A contributer at Bloomberg with a sharp wit and excellent engagement with his readers. If you are interested in finance I highly reccommend reading his <a href="https://www.bloomberg.com/view/contributors/ARbTQlRLRjE/matthew-s-levine">column</a>.</p>
+          	</div>
+        	</li>
+      </ul>
+    </div>
+
+
+    <div class="letter_content">
+		<h2 class="letter">M</h2>
+		<ul class="accordion">
+		<li>
+         	 <button class="accordion-control">Mars</button>
+          	<div class="accordion-panel">
+          		<img src="{{url_for('static', filename='images/mars.jpg')}}" alt="Mars" width="210"/>
+            	<p>The planet in our solar system best suited for colonization. While it is currently uninhabitable due to subzero temperatures and toxic levels of carbon dioxide, Mars previously had an earth-like atmosphere and it would be possible to terraform it to make the conditions akin to earth. Until then, it will soon be possible to live on Mars in engineered habitats (known as habs) located in the subterranean tunnels left by previous volcanic activity. A self-sustaining colony on Mars will 1 million people is the mission of Elon Musk's company SpaceX.</p>
+          	</div>
+        </li>
+        <li>
+         	 <button class="accordion-control">Memory Palace</button>
+          	<div class="accordion-panel">
+            	<p>A method of memorization where you imagine a physical space and then populate it with cues to the items you need to memorize. It is used in by championship competitors to commit the order of multiple decks of cards to memory. </p>
+          	</div>
+        </li>
+		<li>
+         	 <button class="accordion-control">Movies - favorites</button>
+          	<div class="accordion-panel">
+            	<p>
+            	<ol>
+            		<li>- Amadeus</li>
+            		<li>- The Matrix (I/II)</li>
+            		<li>- Ace Ventura: Pet Dectective</li>
+            		<li>- Zoolander</li>
+            		<li>- Auntie Mame</li>
+            		<li>- Lord of the Rings</li>
+            		<li>- Alien</li>
+            	</p>
+          	</div>
+        </li>
+        <li>
+         	 <button class="accordion-control">Musk, Elon</button>
+          	<div class="accordion-panel">
+          		<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Charles_Bolden_congratulates_SpaceX_CEO_and_Chief_Designer_Elon_Musk_in_front_of_the_historic_Dragon_capsule.jpg
+" alt="Elon Musk" width="210">
+            	<p>Founder of Tesla, SpaceX, and Neuralink, he is a pioneering entrepreneur working to develop species-saving technology in renewable energy, space exploration, and artificial intelligence.</p>
+          	</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">O</h2>
+		<ul class="accordion">
+        <li>
+         	<button class="accordion-control">OECD data</button>
+          	<div class="accordion-panel">
+            	<p>Excellent <a href="https://data.oecd.org/">database</a> of all OECD countries including historical data.</p>
+          	</div>
+        </li>
+
+       
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">P</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Paletton</button>
+          	<div class="accordion-panel">
+          		<img src="{{url_for('static', filename='images/paletton.png')}}" alt="paletton" width="210">
+            	<p>Useful tool for selecting and saving color schemes. I have a vast amount of appreciation for people who are able to match colors well and I enjoy cruising templates uploaded by other people. If I'm really desperate, I'll use ColorPicker on a Van Gogh painting and get shades of complimentary colors. Here's the <a href="http://paletton.com/#uid=c2o500D3J1kYO++TOmQoatgDorryzcSk++vIhyXznQC6nBmwzZjpk++GWvKtscI5ypmYW6rf5kpJlLfX+ppFHEmLe+MGfI">template</a> for this site</p>
+          	</div>
+        	</li>
+
+
+        <li>
+         	<button class="accordion-control">Pew Graphs</button>
+          	<div class="accordion-panel">
+            	<p>Great vizs for political <a href="http://www.pewresearch.org/data/">data</a>.</p>
+          	</div>
+        </li>
+
+        <li>
+         	<button class="accordion-control">Plotly</button>
+          	<div class="accordion-panel">
+            	<p>Python library that allows web-based <a href="https://plot.ly/">data vizs</a>.</p>
+          	</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">R</h2>
+		<ul class="accordion">
+        <li>
+         	<button class="accordion-control">Rothblatt, Martine</button>
+          	<div class="accordion-panel">
+            	<p>A <a href="https://en.wikipedia.org/wiki/Martine_Rothblatt">founder</a> of Sirius XM and an extraordinarily fascinating person who entered the biotech space to develop a drug to save her daughter.</p>
+          	</div>
+        </li>
+
+        <li>
+         	<button class="accordion-control">Rosling, Hans</button>
+          	<div class="accordion-panel">
+            	<p>The OG at making data interesting using dynamic visualizations, recently deceased. His <a href="https://www.ted.com/speakers/hans_rosling">TED talks</a> are transcendent.</p>
+          	</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">S</h2>
+		<ul class="accordion">
+
+		<li>
+         	 <button class="accordion-control">Sacks, Oliver</button>
+          	<div class="accordion-panel">
+            	<p>Probably the most <a href="https://en.wikipedia.org/wiki/Oliver_Sacks">famous neuroscientist</a> of our time and for good reason. While Sacks is most well-known for <i>The Man who Mistook his Wife for a Hat</i> he has written extensively on many different topics including the sensations that drugs induce on the brain (ranging from cannabis to lyseric acid).</p>
+          	</div>
+        </li>
+        <li>
+         	 <button class="accordion-control">Science Kombat Game</button>
+          	<div class="accordion-panel">
+          		<img src="http://i.imgur.com/RXkd6vs.gif" alt="Science Kombat" width="210">
+            	<p>Mortal Kombat meets Street Fighter as your choice of 8 famous scientists including Albert Einstein, Charles Darwin, Nikola Tesla, Isaac Newton, Stephen Hawking, Pythagoras, Marie Curie or Alan Turing all equipped with their own attack based on their scientific specialty. <a href="http://www.mariogames.be/Science_Kombat_Game">Play now</a> and FINISH HIM!</p>
+          	</div>
+        	</li>
+
+        <li>
+         	 <button class="accordion-control">Singularity</button>
+          	<div class="accordion-panel">
+            	<p>A phrase initially used by <a href="https://en.wikipedia.org/wiki/Vernor_Vinge">Vernor Vinge</a> to describe a time when we would be advancing technology so quickly there would be a rupture in our ability to keep up with it. Ray Kurzweil has attempted to make some predicitons about the singularity based on the assumption that we will augment our own intelligence with machines in order to keep up. </p>
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Simulation</button>
+          	<div class="accordion-panel">
+            	<p>A hypothesis that we are in fact living in a computer simulation. The arguments are interesting because they are simultaneously impossible to internalize (accept that you're living in the Matrix) and impossible to refute.</p>
+          	</div>
+        </li>
+
+        <li>
+         	 <button class="accordion-control">Spaceflight Now</button>
+          	<div class="accordion-panel">
+            	<p>Regularly updated <a href="https://spaceflightnow.com/launch-schedule/">launch schedule</a> for all spaceports around the world.</p>
+          	</div>
+        	</li>
+
+
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">T</h2>
+		<ul class="accordion">
+        <li>
+         	 <button class="accordion-control">Tetris</button>
+          	<div class="accordion-panel">
+          		<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Tetris.jpg" alt="paletton" width="210">
+            	<p>My favorite game - what my mother affectionately called waste your time.</p>
+          	</div>
+        	</li>
+        <li>
+         	 <button class="accordion-control">Transhumanism</button>
+          	<div class="accordion-panel">
+            	<p>The idea that humans will transcend our biology by augmenting our bodies with technology like a neural link to the internet and blood-borne nanobots that maintain physiological systems. There is a council that includes Kurzweil and Rothblatt. </p>
+          	</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter_content">
+		<h2 class="letter">W</h2>
+		<ul class="accordion">
+
+		<li>
+          <button class="accordion-control">Wait but Why</button>
+          <div class="accordion-panel">
+            <p>Dope <a href="http://waitbutwhy.com/">blog</a> run by Tim Urban. I recommend the posts on <a href="http://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html">Superintelligence</a>, <a href="http://waitbutwhy.com/2014/05/fermi-paradox.html">The Fermi Paradox</a>, and the <a href="http://waitbutwhy.com/2017/03/elon-musk-post-series.html">Elon Musk</a> series.</p>
+          </div>
+        </li>
+
+
+        <li>
+         	 <button class="accordion-control">Wikipedia</button>
+          	<div class="accordion-panel">
+            	<p>The best <a href="https://www.wikipedia.org/">thing</a> on the interent</p>
+          	</div>
+        	</li>
+        
+
+        <li>
+          <button class="accordion-control">WHO data</button>
+          <div class="accordion-panel">
+            <p><a href="http://www.who.int/gho/database/en/">Data</a> and reports.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+	</div>
+
+    
+
+    <script src="{{url_for('static',filename='js/jquery-1.11.0.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/accordion.js')}}"></script>
+    
+
+
+
+</section>
+<div class="stop"><p></p></div>
+
+<footer class ="footer">
+	<div class="footer_info">
+		<ul class="social_links">
+			<li> <a href="mailto:juliahydegray@gmail.com" class="email">Email</a></li>
+			<li> <a href="http://twitter.com/LilJGray" class="twitter">Twitter</a></li>
+			<li> <a href="http://instagram.com/jgray4494" class="instagram">Instagram</a></li>
+			<li> <a href="http://github.com/j4gray" class="github">Github</a></li>
+		</ul>
+		<p class="footnotes">Created by Julia Gray &#169; 2016.</p>
+	</div>
+</footer>
+
+
+</body>
+</html>
